@@ -30,12 +30,10 @@
             <search-screen v-on:chosen-locations="onChosenLocations()" v-show="screen == 0" ref="search"></search-screen>
             <near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="from" v-show="screen==1" ref="fromStops" v-bind:br="bikeRacks"></near-stops>
             <near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="to" v-show="screen==2" ref="toStops" v-bind:br="bikeRacks"></near-stops>
+            <journey-overview :to="to" :from="from" :from-rack="fromRack" :to-rack="toRack" v-if="screen == 3" ref="journey"></journey-overview>
         </div>        
-        
-        
-        
-        
-		<script src="https://unpkg.com/vue"></script> 
+            
+    	<script src="https://unpkg.com/vue"></script> 
 		<script src="latlon-spherical.js"></script> 
         <script src="main.js"></script>		
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq9nb_HdJ9h1n5qrjwD77zYBeTi6RKO6U&callback=app.onMapLoad&libraries=places" async defer></script>
