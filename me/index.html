@@ -22,9 +22,14 @@
                 </div>
             </div>
 --> 
+<!--
             <input class="pure-u-1 main_input" type="text" ref="fromField" placeholder="From..." />
             <input class="pure-u-1 main_input" type="text" ref="toField" placeholder="To..."/>
             <p class="pure-u-1" v-if="fieldsCompleted">FUCKING GOOD ONE</p>
+-->
+            <search-screen v-on:chosen-locations="onChosenLocations()" v-show="screen == 0" ref="search"></search-screen>
+            <near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="from" v-show="screen==1" ref="fromStops" v-bind:br="bikeRacks"></near-stops>
+            <near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="to" v-show="screen==2" ref="toStops" v-bind:br="bikeRacks"></near-stops>
         </div>        
         
         
