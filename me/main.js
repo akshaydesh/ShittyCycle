@@ -77,6 +77,29 @@ class BikeRacks {
 var app = new Vue({
     el: '#app',
     data: {
-        bikeRacks: new BikeRacks()
+        bikeRacks: new BikeRacks(),
+        from: null,
+        to: null,
+        
+        fromPlace: null,
+        toPlace: null,
+    },
+    methods: {
+        onMapLoad: function() {
+            this.from = new google.maps.places.Autocomplete(this.$refs.fromField);
+            this.to = new google.maps.places.Autocomplete(this.$refs.toField);
+            
+            this.from.addListener('place_changed', () => {
+                this.fromPlace = this.from.getPlace();
+            });
+            this.to.addListener('place_changed', () => {
+                this.toPlace = this.to.getPlace();
+            });            
+        },
+    },
+    computed: {
+        fieldsCompleted: function() {
+            return (this.fromPlace && this.toPlace) && this.fromPlace.geometry && this.toPlace.geometry;
+        }
     }
 });
