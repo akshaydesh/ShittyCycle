@@ -67,7 +67,7 @@ class BikeRacks {
         for (let rack of this.racks) {
             output.push({rack: rack, distance: rack.llp.distanceTo(llp)});
         }
-        output.sort((a, b) => {
+        output.sort((a, b) => {     
            return a.distance - b.distance; 
         });
         return output;
