@@ -1,3 +1,10 @@
+var nameComponents = {
+    animals: ["Bilby", "Cat", "Dog", "Cockatoo", "Crocodile", "Dingo", "Echidna", "Emu", "Koala", "Kookaburra", "Parrot", "Numbat", "Penguin", "Platypus", "Possum", "Glider", "Quokka", "Rabbit", "Spider", "Snake", "Shark", "Glider", "Devil", "Kangaroo", "Wallaby", "Turtle", "Wombat"],
+    colours: ["Red", "Blue", "Black", "Purple", "White", "Green", "Yellow", "Brown", "Gray", "Pink", "Orange"],
+    adjectives: ["Shy", "Playful", "Angry", "Fun", "Fat", "Thin", "Docile", "Fast", "Slow", "Tall", "Short", "Sick", "Best", "Worst", "Nice", "Hungry", "Happy", "Sad", "Sitting", "Standing", "Cute", "Ugly"]
+}
+
+
 class BikeRack {
     constructor (rawRack) {
         if (rawRack) {
@@ -231,7 +238,8 @@ Vue.component('journey-overview', {
         <div class="pure-u-1">
             <div ref="map" class="pure-u-1" style="height: 500px;"></div>
             <div class="pure-u-1" v-if="cycleData != null">
-                <p>Cycle Distance: {{cycleData.distance.text}}</p>
+                <p>Your Bike: {{cycleData.name}}</p>
+                <p>Cycle Distance: {{cycleData.distance.text}} ({{cycleData.duration.text}})</p>
                 <p>Estimated Reward: \${{surgedReward.toFixed(2)}}. </p>
                     <p v-if="driveData">Equivalent Drive Time: {{driveData.traffic_duration.text}} ({{driveData.duration.text}} w/o traffic). Traffic Surge: {{driveData.surge.toFixed(1)}}x</p>
             </div>
@@ -313,11 +321,13 @@ Vue.component('journey-overview', {
                         if (status == google.maps.DirectionsStatus.OK) {
                             this.directionRenderers[x].setDirections(result);
                             this.map.fitBounds(this.mapBounds.union(result.routes[0].bounds));
-                            let dist = result.routes[0].legs[0].distance;
+                            let leg = result.routes[0].legs[0];
                             if (x == 1) {
                                 this.cycleData = {
-                                    distance: dist,
-                                    reward: dist.value * (0.025/100)
+                                    name: this.generateName(),
+                                    distance: leg.distance,
+                                    duration: leg.duration,
+                                    reward: leg.distance.value * (0.025/100)
                                 }
                             }
                             
@@ -351,6 +361,10 @@ Vue.component('journey-overview', {
             } else {
                 
             }
+        },
+        generateName: function() {
+            randItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+            return [randItem(nameComponents.adjectives), randItem(nameComponents.colours), randItem(nameComponents.animals)].join(' ');
         }
     },
     mounted: function() {
