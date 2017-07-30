@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>ShittyCycle</title>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	</head>
+	<body>
+        <div id="faultReport" class="pure-g">            
+<!--
+            <div v-if="bikeRacks.ready">
+                <p>IT WORKS</p>
+                <div style="display: block;" v-for="rack in bikeRacks.racks">
+                    <p>{{rack.name}}</p>
+                    <p>{{rack.bikes}} bikes / {{rack.spaces}} spaces</p>
+                    <p>Last updated: {{rack.age.toLocaleTimeString()}}</p>
+                    <button v-on:click="rack.update()">Update</button>
+                </div>
+            </div>
+--> 
+<!--
+            <input class="pure-u-1 main_input" type="text" ref="fromField" placeholder="From..." />
+            <input class="pure-u-1 main_input" type="text" ref="toField" placeholder="To..."/>
+            <p class="pure-u-1" v-if="fieldsCompleted">FUCKING GOOD ONE</p>
+-->
+            <fault-report v-on:reportData="onPageLoad()" ref="faultPage"></faultRepore>
+            <!--<near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="from" v-show="screen==1" ref="fromStops" v-bind:br="bikeRacks"></near-stops>
+            <near-stops v-on:chosen-rack="onChosenRack()" v-bind:loc="to" v-show="screen==2" ref="toStops" v-bind:br="bikeRacks"></near-stops>
+            <journey-overview :to="to" :from="from" :from-rack="fromRack" :to-rack="toRack" v-if="screen == 3" ref="journey"></journey-overview>-->
+        </div>        
+            
+    	<script src="https://unpkg.com/vue"></script> 
+		<script src="latlon-spherical.js"></script> 
+        <script src="main.js"></script>		
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq9nb_HdJ9h1n5qrjwD77zYBeTi6RKO6U&callback=faultReport.onPageLoad&libraries=places" async defer></script>-->
+	</body>
+</html>
