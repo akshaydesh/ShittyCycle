@@ -1,0 +1,749 @@
+[
+ {
+   "suburb": "City",
+   "name": "100 Adelaide Street",
+   "address": "King George Square (Ann Street side), beside access/ ventilation tower",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46815,
+   "lng": 153.024
+ },
+ {
+   "suburb": "City",
+   "name": "100 Edward Street",
+   "address": "Footpath",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.47052,
+   "lng": 153.029
+ },
+ {
+   "suburb": "City",
+   "name": "101 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.47152,
+   "lng": 153.0272
+ },
+ {
+   "suburb": "City",
+   "name": "102 Adelaide Street",
+   "address": "Footpath (outside Officeworks)",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46849,
+   "lng": 153.0249
+ },
+ {
+   "suburb": "City",
+   "name": "103 Edward Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.4704,
+   "lng": 153.029
+ },
+ {
+   "suburb": "City",
+   "name": "108 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.47146,
+   "lng": 153.0269
+ },
+ {
+   "suburb": "City",
+   "name": "108 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.47154,
+   "lng": 153.027
+ },
+ {
+   "suburb": "City",
+   "name": "109 Elizabeth Street",
+   "address": "Corner Elizabeth Street and Albert Street",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.47062,
+   "lng": 153.026
+ },
+ {
+   "suburb": "City",
+   "name": "116 Adelaide Street",
+   "address": "Outside Fitness First",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46831,
+   "lng": 153.0251
+ },
+ {
+   "suburb": "City",
+   "name": "119 Charlotte Street",
+   "address": "Footpath",
+   "bike_stands": 6,
+   "rack_type": "2 x 3 bay racks",
+   "lat": -27.47082,
+   "lng": 153.0273
+ },
+ {
+   "suburb": "Spring Hill",
+   "name": "121 Wickham Terrace",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46465,
+   "lng": 153.0258
+ },
+ {
+   "suburb": "City",
+   "name": "122 Roma Street",
+   "address": "Footpath outside District and Supreme Court",
+   "bike_stands": 14,
+   "rack_type": "7 x holding rails",
+   "lat": -27.46735,
+   "lng": 153.0211
+ },
+ {
+   "suburb": "City",
+   "name": "123 Albert Street",
+   "address": "Outside Coffee Club",
+   "bike_stands": 2,
+   "rack_type": "Holding Rail",
+   "lat": -27.47077,
+   "lng": 153.0264
+ },
+ {
+   "suburb": "City",
+   "name": "123 Albert Street",
+   "address": "Outside Coffee Club",
+   "bike_stands": 4,
+   "rack_type": "3 bay rack",
+   "lat": -27.47084,
+   "lng": 153.0265
+ },
+ {
+   "suburb": "City",
+   "name": "125 Margaret Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.47322,
+   "lng": 153.0277
+ },
+ {
+   "suburb": "City",
+   "name": "127 George Street",
+   "address": "Corner George Street and Charlotte Street",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.47234,
+   "lng": 153.025
+ },
+ {
+   "suburb": "Spring Hill",
+   "name": "136 Wickham Terrace",
+   "address": "Footpath (outside car park)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46489,
+   "lng": 153.0252
+ },
+ {
+   "suburb": "Spring Hill",
+   "name": "149 Wickham Terrace",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46469,
+   "lng": 153.0253
+ },
+ {
+   "suburb": "City",
+   "name": "15 Adelaide Street.",
+   "address": "Next to phone booth",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46995,
+   "lng": 153.0232
+ },
+ {
+   "suburb": "City",
+   "name": "160 Ann Street",
+   "address": "Footpath (outside CQ Uni Building)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46765,
+   "lng": 153.0243
+ },
+ {
+   "suburb": "City",
+   "name": "2 Edward Street",
+   "address": "Corner Edward Street and Alice Street",
+   "bike_stands": 6,
+   "rack_type": "3 bay rack",
+   "lat": -27.47197,
+   "lng": 153.0304
+ },
+ {
+   "suburb": "City",
+   "name": "20 Market Street",
+   "address": "In small park area on footpath",
+   "bike_stands": 6,
+   "rack_type": "3 x holding rails",
+   "lat": -27.46946,
+   "lng": 153.0296
+ },
+ {
+   "suburb": "City",
+   "name": "225 Edward Street",
+   "address": "Footpath (outside Commonwealth Bank)",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46812,
+   "lng": 153.0269
+ },
+ {
+   "suburb": "City",
+   "name": "239 George Street",
+   "address": "Footpath (outside Hitachi Building)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.47033,
+   "lng": 153.023
+ },
+ {
+   "suburb": "City",
+   "name": "240 Queen Street",
+   "address": "Outside Commonwealth Bank",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46799,
+   "lng": 153.0273
+ },
+ {
+   "suburb": "City",
+   "name": "240 Queen Street",
+   "address": "Outside Commonwealth Bank",
+   "bike_stands": 8,
+   "rack_type": "4 bay rack",
+   "lat": -27.46814,
+   "lng": 153.027
+ },
+ {
+   "suburb": "City",
+   "name": "25 Adelaide Street.",
+   "address": "Next to Tree",
+   "bike_stands": 6,
+   "rack_type": "3 Bay Rack ",
+   "lat": -27.46966,
+   "lng": 153.0236
+ },
+ {
+   "suburb": "City",
+   "name": "266 George Street",
+   "address": "Corner Adelaide Street and George Street (outside Brisbane Square)",
+   "bike_stands": 8,
+   "rack_type": "4 x holding rails",
+   "lat": -27.47038,
+   "lng": 153.0228
+ },
+ {
+   "suburb": "City",
+   "name": "266 George Street",
+   "address": "Corner North Quay and Adelaide Street (outside Brisbane Square)",
+   "bike_stands": 18,
+   "rack_type": "9 x holding rails",
+   "lat": -27.47094,
+   "lng": 153.0221
+ },
+ {
+   "suburb": "City",
+   "name": "270 Ann Street",
+   "address": "Footpath (outside Central Railway Station, next to pedestrian entry ramp)",
+   "bike_stands": 10,
+   "rack_type": "2 x 5 bay racks",
+   "lat": -27.46662,
+   "lng": 153.0256
+ },
+ {
+   "suburb": "City",
+   "name": "270 Queen Street",
+   "address": "Post Office Square, next to eastern walkway",
+   "bike_stands": 9,
+   "rack_type": "Wheel racks",
+   "lat": -27.46744,
+   "lng": 153.0278
+ },
+ {
+   "suburb": "City",
+   "name": "300 Elizabeth Street",
+   "address": "Near corner Elizabeth and Creek Street",
+   "bike_stands": 6,
+   "rack_type": "3 bay rack",
+   "lat": -27.46786,
+   "lng": 153.0292
+ },
+ {
+   "suburb": "City",
+   "name": "308 Queen Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.4672,
+   "lng": 153.0283
+ },
+ {
+   "suburb": "City",
+   "name": "31 Tank Street (Santos Place)",
+   "address": "Walkway through Santos site between Tank Street and Turbot Street (next to car park entry)",
+   "bike_stands": 44,
+   "rack_type": "22 x holding rails",
+   "lat": -27.46866,
+   "lng": 153.0201
+ },
+ {
+   "suburb": "City",
+   "name": "31 Wharf Street",
+   "address": "Corner of wharf Street and Adelaide Street.",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46511,
+   "lng": 153.0296
+ },
+ {
+   "suburb": "City",
+   "name": "32 Edward Street",
+   "address": "Footpath",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.4718,
+   "lng": 153.0302
+ },
+ {
+   "suburb": "City",
+   "name": "320 Adelaide Street",
+   "address": "Front of Fitness First",
+   "bike_stands": 5,
+   "rack_type": "3 bay rack",
+   "lat": -27.46502,
+   "lng": 153.0293
+ },
+ {
+   "suburb": "City",
+   "name": "320 Adelaide Street",
+   "address": "Footpath near corner Creek Street",
+   "bike_stands": 6,
+   "rack_type": "3 bay rack",
+   "lat": -27.46628,
+   "lng": 153.0277
+ },
+ {
+   "suburb": "City",
+   "name": "340 George Street",
+   "address": "Footpath (outside Java Cafe)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46922,
+   "lng": 153.0217
+ },
+ {
+   "suburb": "Spring Hill",
+   "name": "36 Bowen Street Spring Hill",
+   "address": "Foothpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46237,
+   "lng": 153.0283
+ },
+ {
+   "suburb": "Spring Hill",
+   "name": "36 Bowen Street Spring Hill ",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46233,
+   "lng": 153.0283
+ },
+ {
+   "suburb": "City",
+   "name": "363 George Street ",
+   "address": "Magistrates Court",
+   "bike_stands": 10,
+   "rack_type": "5 x holding rails",
+   "lat": -27.46828,
+   "lng": 153.0215
+ },
+ {
+   "suburb": "City",
+   "name": "400 George Street",
+   "address": "Footpath",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46853,
+   "lng": 153.0211
+ },
+ {
+   "suburb": "City",
+   "name": "419 George Street",
+   "address": "Footpath, outside District and Supreme Court",
+   "bike_stands": 8,
+   "rack_type": "4 x holding rails",
+   "lat": -27.46773,
+   "lng": 153.0205
+ },
+ {
+   "suburb": "City",
+   "name": "48 Turbot Street (400 George Street)",
+   "address": "Footpath",
+   "bike_stands": 8,
+   "rack_type": "4 x holding rails",
+   "lat": -27.46879,
+   "lng": 153.021
+ },
+ {
+   "suburb": "City",
+   "name": "488 Queen Street",
+   "address": "Footpath",
+   "bike_stands": 6,
+   "rack_type": "3 x holding rails",
+   "lat": -27.46436,
+   "lng": 153.0312
+ },
+ {
+   "suburb": "City",
+   "name": "53 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 5,
+   "rack_type": "3 bay rack",
+   "lat": -27.47252,
+   "lng": 153.0281
+ },
+ {
+   "suburb": "City",
+   "name": "62 Ann Street",
+   "address": "Footpath (outside Department of Agriculture and Fisheries Building)",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46889,
+   "lng": 153.0226
+ },
+ {
+   "suburb": "City",
+   "name": "69 Ann Street",
+   "address": "Footpath (outside Telstra Building)",
+   "bike_stands": 4,
+   "rack_type": "2 x holding rails",
+   "lat": -27.46924,
+   "lng": 153.0225
+ },
+ {
+   "suburb": "City",
+   "name": "80 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 5,
+   "rack_type": "3 bay rack",
+   "lat": -27.47228,
+   "lng": 153.0277
+ },
+ {
+   "suburb": "City",
+   "name": "80 Albert Street",
+   "address": "Footpath ",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.47223,
+   "lng": 153.0276
+ },
+ {
+   "suburb": "City",
+   "name": "82 Ann Street",
+   "address": "Footpath (outside Sarina Russo Building)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46868,
+   "lng": 153.0229
+ },
+ {
+   "suburb": "City",
+   "name": "87 Albert Street",
+   "address": "Footpath",
+   "bike_stands": 6,
+   "rack_type": "3 x holding rails",
+   "lat": -27.47173,
+   "lng": 153.0274
+ },
+ {
+   "suburb": "City",
+   "name": "88 Mary Street",
+   "address": "Corner Mary Street and Albert Streets",
+   "bike_stands": 6,
+   "rack_type": "3 bay rack",
+   "lat": -27.47198,
+   "lng": 153.0272
+ },
+ {
+   "suburb": "City",
+   "name": "97 Creek Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46649,
+   "lng": 153.0282
+ },
+ {
+   "suburb": "Fortitude Valley",
+   "name": "Boundary st- near Ivory St",
+   "address": "Southern Boundary St footpath, near traffic lights",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46232,
+   "lng": 153.0331
+ },
+ {
+   "suburb": "Fortitude Valley",
+   "name": "Boundary st, near Ivory Lane",
+   "address": "On southern footpath of Boundary St, below Story Bridge",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46237,
+   "lng": 153.0343
+ },
+ {
+   "suburb": "City",
+   "name": "City Botanic Gardens",
+   "address": "Near rotunda",
+   "bike_stands": 5,
+   "rack_type": "wheel racks",
+   "lat": -27.47432,
+   "lng": 153.03
+ },
+ {
+   "suburb": "City",
+   "name": "City Botanic Gardens",
+   "address": "Near all abilities playground",
+   "bike_stands": 8,
+   "rack_type": "4 x holding rails",
+   "lat": -27.47374,
+   "lng": 153.0309
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Adelaide Street and Creek Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46642,
+   "lng": 153.0278
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Ann St and North Quay",
+   "address": "Beneath overpass",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack ",
+   "lat": -27.47014,
+   "lng": 153.0214
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Charlotte Street and Eagle Street",
+   "address": "Footpath, near traffic lights",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.46875,
+   "lng": 153.03
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Charlotte Street and Edward Street",
+   "address": "Footpath",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.46997,
+   "lng": 153.0284
+ },
+ {
+   "suburb": "City",
+   "name": "Corner George Street and Margaret Street",
+   "address": "Footpath (outside Mineral House)",
+   "bike_stands": 4,
+   "rack_type": "4 x Holding rail",
+   "lat": -27.47383,
+   "lng": 153.0264
+ },
+ {
+   "suburb": "City",
+   "name": "Corner George Street and Mary Street",
+   "address": "Footpath (outside Capital Hill Building)",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.47311,
+   "lng": 153.0257
+ },
+ {
+   "suburb": "City",
+   "name": "Corner George Street and Queen Street",
+   "address": "Redacliff Place (above bus tunnel)",
+   "bike_stands": 10,
+   "rack_type": "7 bay rack",
+   "lat": -27.47114,
+   "lng": 153.0235
+ },
+ {
+   "suburb": "City",
+   "name": "Corner North Quay and Queen Street",
+   "address": "Redacliff Place (North Quay side)",
+   "bike_stands": 38,
+   "rack_type": "2 x 10 bay racks, 1 x 7 bay rack, 1 x 5 bay rack, 6 single sided holding rails",
+   "lat": -27.47135,
+   "lng": 153.0227
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Queen Street and Creek Street",
+   "address": "Footpath",
+   "bike_stands": 3,
+   "rack_type": "wheel rack",
+   "lat": -27.46695,
+   "lng": 153.0289
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Queen Street and Eagle Street",
+   "address": "Footpath",
+   "bike_stands": 5,
+   "rack_type": "3 bay rack",
+   "lat": -27.46605,
+   "lng": 153.03
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Queen Street and Eagle Street",
+   "address": "In front of Emerites building",
+   "bike_stands": 5,
+   "rack_type": "3 bay rack",
+   "lat": -27.46559,
+   "lng": 153.0307
+ },
+ {
+   "suburb": "City",
+   "name": "Corner Turbot Street and Wickham Terrace",
+   "address": "Wickham Terrace Car Park, inside Turbot Street entrance",
+   "bike_stands": 7,
+   "rack_type": "toaster rack",
+   "lat": -27.46522,
+   "lng": 153.0258
+ },
+ {
+   "suburb": "City",
+   "name": "Eagle Street Pier",
+   "address": "In entry area",
+   "bike_stands": 10,
+   "rack_type": "2 x 5 bay racks",
+   "lat": -27.46975,
+   "lng": 153.0305
+ },
+ {
+   "suburb": "City",
+   "name": "Gardens Point Road",
+   "address": "Top of cul-de-sac",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.47753,
+   "lng": 153.0305
+ },
+ {
+   "suburb": "City",
+   "name": "Gardens Point Road, QUT",
+   "address": "Near picnic shelter",
+   "bike_stands": 9,
+   "rack_type": "7 bay rack",
+   "lat": -27.47897,
+   "lng": 153.0283
+ },
+ {
+   "suburb": "City",
+   "name": "Gardens Point Road, QUT",
+   "address": "Near picnic shelter",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.47899,
+   "lng": 153.0283
+ },
+ {
+   "suburb": "City",
+   "name": "King George Square",
+   "address": "King George Square (Speakers Corner), above Adelaide Street",
+   "bike_stands": 10,
+   "rack_type": "7 bay rack",
+   "lat": -27.46856,
+   "lng": 153.0246
+ },
+ {
+   "suburb": "City",
+   "name": "King George Square",
+   "address": "King George Square (behind busway entrance on Adelaide Street)",
+   "bike_stands": 20,
+   "rack_type": "2 x 10 bay racks",
+   "lat": -27.46883,
+   "lng": 153.0241
+ },
+ {
+   "suburb": "City",
+   "name": "Parkland Boulevard",
+   "address": "Roma Street Parklands, near main entry off Parkland Boulevard",
+   "bike_stands": 8,
+   "rack_type": "4 x holding rails",
+   "lat": -27.46346,
+   "lng": 153.0174
+ },
+ {
+   "suburb": "City",
+   "name": "Queens Wharf Road",
+   "address": "Bicentennial Bikeway, near steps to North Quay Ferry Terminal",
+   "bike_stands": 4,
+   "rack_type": "Holding rail",
+   "lat": -27.47242,
+   "lng": 153.0231
+ },
+ {
+   "suburb": "City",
+   "name": "Roma Street",
+   "address": "Roma Street entrance to King George Square Busway Station",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.46794,
+   "lng": 153.0234
+ },
+ {
+   "suburb": "City",
+   "name": "Wickham Terrace, near Upper Edward St",
+   "address": "Wickham Terrace Car Park, level 4b ",
+   "bike_stands": 7,
+   "rack_type": "5 bay rack",
+   "lat": -27.46501,
+   "lng": 153.0253
+ },
+ {
+   "suburb": "City",
+   "name": "Wickham Terrace, near Upper Edward Street",
+   "address": "Wickham Terrace Car Park, level 4a",
+   "bike_stands": 10,
+   "rack_type": "8 bay rack",
+   "lat": -27.4649,
+   "lng": 153.0253
+ },
+ {
+   "suburb": "City ",
+   "name": "Roma Street",
+   "address": "On Shared pathway front of Police Watch house near City Cycle facility   ",
+   "bike_stands": 2,
+   "rack_type": "Holding rail",
+   "lat": -27.466245,
+   "lng": 153.017233
+ }
+]

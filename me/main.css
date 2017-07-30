@@ -4,6 +4,24 @@
     margin: 0 auto;
 }
 
+.title {
+    padding: 25px 0;
+    margin: 10px 0;  
+    background-color: rgb(109, 109, 109);
+}
+
+.title h2 {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+} 
+
+.title img {
+    height: 100px;
+    display: inline;
+}
 
 .main_input{ 
     margin: 10px 0;
