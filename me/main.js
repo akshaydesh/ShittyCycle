@@ -158,8 +158,13 @@ Vue.component('search-screen', {
     },
     methods: {
         mapsReady: function() {        
-            this.from = new google.maps.places.Autocomplete(this.$refs.fromField);
-            this.to = new google.maps.places.Autocomplete(this.$refs.toField);
+            let options = {
+                bounds: new google.maps.LatLngBounds({lat: -27.519452, lng: 152.957797}, 
+                                                    {lat: -27.406776, lng: 153.094139})
+            };
+            
+            this.from = new google.maps.places.Autocomplete(this.$refs.fromField, options);
+            this.to = new google.maps.places.Autocomplete(this.$refs.toField, options);
 
             this.from.addListener('place_changed', () => {
                 this.fromPlace = this.from.getPlace();
@@ -188,7 +193,7 @@ Vue.component('near-stops', {
     template: `
         <div class="pure-u-1" v-if="loc">
             <p class="pure-u-1">The 6 nearest bike racks to: {{loc.name}}</p>
-            <input type="checkbox" id="checkbox" v-model="dockless">
+            <input type="checkbox" id="checkbox" v-model="dockless" checked>
             <label for="checkbox">Include Dockless?</label>
             <div class="pure-u-1" v-if="closeRacks.length">
                 <div class="bike_rack pure-u-md-1-2 pure-u-1" v-for="rdp in closeRacks">
@@ -206,7 +211,7 @@ Vue.component('near-stops', {
         return {
             closeRacks: [],
             chosenRack: null,
-            dockless: false,
+            dockless: true,
         }
     },
     watch: {
@@ -236,14 +241,15 @@ Vue.component('near-stops', {
 Vue.component('journey-overview', {
     template: `
         <div class="pure-u-1">
+            <button class="pure-u-1 pure-button-primary" v-on:click="follow = !follow">{{follow ? "Following" : "Not Following"}}</button>
             <div ref="map" class="pure-u-1" style="height: 500px;"></div>
             <div class="pure-u-1" v-if="cycleData != null">
                 <p>Your Bike: {{cycleData.name}}</p>
                 <p>Cycle Distance: {{cycleData.distance.text}} ({{cycleData.duration.text}})</p>
                 <p>Estimated Reward: \${{surgedReward.toFixed(2)}}. </p>
                     <p v-if="driveData">Equivalent Drive Time: {{driveData.traffic_duration.text}} ({{driveData.duration.text}} w/o traffic). Traffic Surge: {{driveData.surge.toFixed(1)}}x</p>
+
             </div>
-            <button class="pure-u-1"> WHERE AM I !?!?!? </button>
         </div>
     `,
     props: ['to', 'from', 'fromRack', 'toRack'],
@@ -251,7 +257,11 @@ Vue.component('journey-overview', {
         return {
             map: null,  
             cycleData: null,
-            driveData: null
+            driveData: null,
+            follow: false,
+            geoMarker: null,
+            geoWatcher: null,
+            geoLoc: null,
         }
     },
     methods: {
@@ -284,7 +294,7 @@ Vue.component('journey-overview', {
                     },
     //                panel: document.getElementById('panel').appendChild(document.createElement('li'))
                 })
-            ];
+            ];       
         },
         drawDirections: function() {
             let to = { placeId: this.to.place_id };
@@ -356,11 +366,33 @@ Vue.component('journey-overview', {
             }
         },
         geolocate: function() {
-            if ("geolocation" in nagivator) {
-                
+            var nav = window.navigator;
+            if ("geolocation" in nav) {
+                this.geoWatcher = nav.geolocation.watchPosition((position) => {
+                    this.geoLoc = {
+                        lat: position.coords.latitude, 
+                        lng: position.coords.longitude
+                    };
+                    if (!this.geoMarker) {
+                        this.geoMarker = new google.maps.Marker({
+                            position: this.geoLoc,
+                            map: this.map,
+                            title: 'Your Location',
+                            label: 'U'
+                        });
+                    } else {
+                        this.geoMarker.setPosition(this.geoLoc);
+                    }
+                    if (this.follow) this.centerMap();
+                    
+                });
             } else {
-                
+                alert("No Location!");
             }
+        }, 
+        centerMap: function() {
+            this.map.setCenter(this.geoLoc);
+            this.map.setZoom(15);
         },
         generateName: function() {
             randItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -377,6 +409,7 @@ Vue.component('journey-overview', {
         });
         this.mapsReady();
         this.drawDirections();
+        this.geolocate();
     },
     computed: {
         surgedReward: function() {
@@ -384,6 +417,11 @@ Vue.component('journey-overview', {
                 return this.driveData.surge * this.cycleData.reward;
             }
             return this.cycleData.reward;
+        }
+    }, 
+    watch: {
+        follow: function(val) {
+            if (val) this.centerMap();
         }
     }
 });
