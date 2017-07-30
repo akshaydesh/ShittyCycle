@@ -180,11 +180,11 @@ Vue.component('search-screen', {
 Vue.component('near-stops', {
     template: `
         <div class="pure-u-1" v-if="loc">
-            <p class="pure-u-2-3">The 6 nearest bike racks to: {{loc.name}}</p>
-            <input class="pure-u-1-3" type="checkbox" id="checkbox" v-model="dockless">
+            <p class="pure-u-1">The 6 nearest bike racks to: {{loc.name}}</p>
+            <input type="checkbox" id="checkbox" v-model="dockless">
             <label for="checkbox">Include Dockless?</label>
             <div class="pure-u-1" v-if="closeRacks.length">
-                <div class="pure-u-1-2" v-for="rdp in closeRacks">
+                <div class="bike_rack pure-u-md-1-2 pure-u-1" v-for="rdp in closeRacks">
                     <p>Distance {{rdp.distance.toFixed(2)}}m</p>
                     <p><span v-if="isDockless(rdp.rack)">DOCKLESS - </span>{{rdp.rack.name}}</p>
                     <p>{{rdp.rack.bikes}} bikes / {{rdp.rack.spaces}} spaces</p>
@@ -230,12 +230,12 @@ Vue.component('journey-overview', {
     template: `
         <div class="pure-u-1">
             <div ref="map" class="pure-u-1" style="height: 500px;"></div>
-            <div class="pure-u-1-2" v-if="cycleData != null">
+            <div class="pure-u-1" v-if="cycleData != null">
                 <p>Cycle Distance: {{cycleData.distance.text}}</p>
                 <p>Estimated Reward: \${{surgedReward.toFixed(2)}}. </p>
                     <p v-if="driveData">Equivalent Drive Time: {{driveData.traffic_duration.text}} ({{driveData.duration.text}} w/o traffic). Traffic Surge: {{driveData.surge.toFixed(1)}}x</p>
             </div>
-            <button class="pure-u-1-2"> WHERE AM I !?!?!? </button>
+            <button class="pure-u-1"> WHERE AM I !?!?!? </button>
         </div>
     `,
     props: ['to', 'from', 'fromRack', 'toRack'],
